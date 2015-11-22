@@ -158,13 +158,33 @@ ul.main_nav {
 }
 
 @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 768px) 
+  and (max-device-width: 375px) 
+  and (min-device-width: 768px) 
   and (-webkit-min-device-pixel-ratio: 2) {
     .header_container_phone {
         display: none;
     } 
 }
+
+@media screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 768px) 
+  and (-webkit-min-device-pixel-ratio: 2){
+    .header_container{
+        display: none;
+    }
+}
+
+@media screen 
+  and (max-device-width: 375px) 
+  and (min-device-width: 768px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .header_container_phone {
+        display: none;
+    } 
+}
+
+
 
 .header_container_phone {
     margin-top: 30px;
