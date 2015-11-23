@@ -1,0 +1,338 @@
+body {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    font-family: Open Sans, Gentium Book Basic, Libre Baskerville, sans-serif;
+    font-size: 16px;
+    
+}
+
+
+
+/* ----------------------------------------- */
+/*         container responsitivity          */
+/* ----------------------------------------- */
+
+@media all and (min-width: 1150px) {
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+	    width: 1100px;
+    }
+}
+
+@media all and (min-width: 769px) and (max-width: 1149px) {
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+        width: calc(100% - 30px);
+    }
+}
+
+@media all and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
+
+
+
+/* ----------------------------------------- */
+/*                  general                  */
+/* ----------------------------------------- */
+
+img {
+    vertical-align: top;
+}
+
+
+
+/* ----------------------------------------- */
+/*                  header                   */
+/* ----------------------------------------- */
+
+.main-header {
+    border-bottom: 1px solid #dddddd;
+    margin: 50px 0px;
+    padding-bottom: 4px;
+}
+
+.branding {
+    margin-bottom: 70px;
+    text-align: center
+}
+
+
+.logo-reg {
+    width: 150px;
+}
+
+
+
+/* ----------------------------------------- */
+/*             header-nav-tiers              */
+/* ----------------------------------------- */
+
+.navigation {
+    text-align: center;
+}
+
+.navigation li {
+    position: relative;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.navigation li >a {
+    z-index: 1;
+    margin: 0px 20px;
+    padding: 20px;
+    text-decoration: none;
+    color: gray;
+}
+
+.navigation li >a:hover {
+    z-index: 2;
+    
+    color: #e61212;
+}
+
+
+.navigation ul li ul li:hover { 
+    background: white;
+    color: #e61212;
+}
+
+
+.navigation ul li ul {
+    text-align: left;
+    position: absolute;
+    top: 43px;
+    left: 20px;
+    width: 300px;
+    display: none;
+}
+
+
+.navigation ul li ul li { 
+    background: #fff; 
+    display: block;
+    padding: 25px 20px 25px 20px;
+    color: gray;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #aaa;
+}
+
+.navigation ul li ul >a {
+    text-decoration: none;
+    color: darkgray;
+}
+
+.navigation ul li ul li:hover { 
+    color: #e61212;
+    transition: all 0.1s ease-in;
+}
+
+.navigation li:hover a {
+    border-bottom: 1px solid #aaa;
+    border-top: 1px solid #ddd;
+    box-shadow: 0px 10px 14px -10px rgba(0,0,0,0.3);   
+}
+
+.navigation ul li:hover ul {
+    z-index: 100;
+    display: block;
+    padding: 0;
+    box-shadow: 0px 10px 14px -10px rgba(0,0,0,0.3);
+}
+
+
+/* ----------------------------------------- */
+/*             header-nav-mobile             */
+/* ----------------------------------------- */
+
+
+
+/* ----------------------------------------- */
+/*             homepage-pic                  */
+/* ----------------------------------------- */
+
+
+
+.current-img > img {
+    width: 100%;
+    position: relative;
+    
+}
+
+.content {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    text-shadow: 0px 3px 8px black;
+    font-family: Open Sans;
+    letter-spacing: 7px;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 80px;
+    margin: -15px;
+    text-transform: uppercase;
+}
+
+
+h3 {
+    margin: 0;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    font-size: 30px;
+    margin: 0;
+    font-family: Libre Baskerville;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+}
+
+
+@media all and (min-width: 769px) and (max-width: 1149px) {
+h1 {
+        transform: scale(0.85)
+    }
+}
+
+@media all and (max-width: 768px) {
+h1 {
+        transform: scale(0.6);
+        line-height: 90px;
+        margin: -25px;
+    }
+}
+
+@media all and (max-width: 1149px) {
+h2 {
+        transform: scale(0.85)
+    }
+}
+
+@media all and (max-width: 1149px) {
+h3 {
+        transform: scale(0.9);
+        font-weight: 600;
+        
+    }
+}
+
+@media all and (max-width: 768px){
+    .content {
+        position: relative;
+        text-align: center;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-top: 30px;
+        margin-bottom: -60px;
+        transform: translateY(-0%);
+        color: #000;
+        text-shadow: none;
+        font-family: Open Sans;
+        letter-spacing: 4px;
+        padding-bottom: 40px;
+        
+    }
+}
+
+@media all and (max-width: 768px){
+    .overlay {
+        display: none;
+        
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.previous-exhibit {
+    position: relative;
+    margin: 20px 0 20px 0;
+}
+
+
+/* ----------------------------------------- */
+/*             content-wrapper               */
+/* ----------------------------------------- */
+
+.main-content-wrapper {
+    position: relative;
+    z-index: 1;
+    border: none;
+}
+
+
+.secondary-content-wrapper {
+    font-family: Open Sans;
+    letter-spacing: 4px;
+    text-align: center;
+    position: relative;
+    padding: 0;
+    margin-top: 60px;
+    z-index: 1;
+    
+}
+
+
+.secondary-content-wrapper > h3 {
+    color: gray;
+    padding-bottom: 10px;
+}
+
+.spacer {
+    margin-top: 60px;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+@media all and (min-width: 1149px) {
+    .secondary-content-wrapper{
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+    }
+}
+
+@media all and (min-width: 769px) and (max-width: 1149px) {
+    .secondary-content-wrapper{
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+    }
+}
+
+
+@media all and (max-width: 768px) {
+    .secondary-content-wrapper{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+}
