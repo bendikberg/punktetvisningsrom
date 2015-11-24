@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    font-family: Open Sans, Gentium Book Basic, Libre Baskerville, sans-serif;
+    font-size: 16px;
+    
+}
+
+.header-box {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color:aqua;
+    text-align: center;
+    transition: all 1s ease;
+}
+
+
+.header-box2 {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background-color:aqua;
+    text-align: center;
+    z-index: 10;
+    transition: all 1s ease;
+    box-shadw: 0px 10px 14px -10px rgba(0,0,0,0.3);
+}
+
+#header-toggle {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 100;
+    background-color: azure;
+    cursor: pointer;
+    transform: translateX(-50%);
+    transition: all 1s ease;
+    
+}
+
+
+.push {
+    position: absolute;
+    width: 100%;
+    top: -200px;
+    height: 400px;
+    background-color: darkgray;
+    text-align: center;
+    z-index: 1;
+    box-shadow: inset 0px 10px 14px -10px rgba(0,0,0,0.3);
+    transition: all 1s ease;
+    
+}
+
+.menu-box {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    z-index: 2;
+    bottom: 0;
+    box-shadow: inset 0px 10px 14px -10px rgba(256,256,256,0.9);
+    background-color: gray;
+    transition: all 1s ease;
+}
+
+#menu-toggle {
+    content: "^";
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    z-index: 2;
+    bottom: 0;
+    transform: translateX(-50%);
+    box-shadow: 0px -10px 20px -10px rgba(256,256,256,0.8);
+    background-color: gray;
+    transition: all 1s ease;
+}
+
+#toggle {
+    position: absolute;
+    cursor: pointer;
+    appearance: none;
+    left: -100%;
+    right: -100%;
+    display: none;
+    transition: all 1s ease;
+}
+
+#toggle:checked ~ .push {
+    display: block;
+    top: 200px;
+    z-index: 1;
+    transition: all 1s ease;
+    
+}
+
+#toggle:checked ~ .push > .content-box {
+    position: absolute;
+    display: block;
+    margin-top: 400px;
+    z-index: 1;
+    transition: all 1s ease;
+    
+}
+
+#toggle:checked + #header-toggle {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    z-index: 15;
+    background-color: blue;
+    cursor: pointer;
+    transition: all 1s ease;
+    
+}
+
+#toggle:checked ~.header-box2 {
+    box-shadow: 0px 10px 14px -10px rgba(0,0,0,0.3);
+}
+
+
+.content-box {
+    position: relative;
+    width: 100%;
+    height: 1600px;
+    background-color:aqua;
+    z-index: 10;
+    transition: all 1s ease;
+    
+}
+
