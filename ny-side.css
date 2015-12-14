@@ -79,7 +79,8 @@ img {
 h1 {
     font-weight: 300;
     font-size: 80px;
-    margin: -15px;
+    margin: -5px;
+    line-height: 110%;
     text-transform: uppercase;
 }
 
