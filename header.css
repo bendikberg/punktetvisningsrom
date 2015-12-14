@@ -1,0 +1,109 @@
+
+/* ----------------------------------------- */
+/*                  header                   */
+/* ----------------------------------------- */
+
+.main-header {
+    border-bottom: 1px solid #ccc;
+    margin: 0px 0px;
+    padding-bottom: 4px;
+    top: 0;
+    
+}
+
+.branding {
+    padding-top: 50px;
+    margin-bottom: 70px;
+    text-align: center
+}
+
+
+.logo-reg {
+    width: 200px;
+}
+
+
+
+/* ----------------------------------------- */
+/*             header-nav-tiers              */
+/* ----------------------------------------- */
+
+.navigation {
+    text-align: center;
+}
+
+.navigation li {
+    position: relative;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.navigation li >a {
+    z-index: 1;
+    margin: 0px 20px;
+    padding: 20px;
+    text-decoration: none;
+    color: grey;
+}
+
+.navigation li >a:hover {
+    z-index: 2;
+    
+    color: #ff7303;
+}
+
+
+.navigation ul li ul li:hover { 
+    background: white;
+    color: #ff7303;
+}
+
+
+.navigation ul li ul {
+    text-align: left;
+    position: absolute;
+    top: 43px;
+    left: 20px;
+    width: 300px;
+    display: none;
+}
+
+
+.navigation ul li ul li { 
+    background: #fff; 
+    display: block;
+    padding: 25px 20px 25px 20px;
+    color: gray;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #aaa;
+}
+
+.navigation ul li ul >a {
+    text-decoration: none;
+    color: darkgray;
+}
+
+.navigation ul li ul li:hover { 
+    color: #ff7303;
+    transition: all 0.1s ease-in;
+}
+
+.navigation li:hover a {
+    border-bottom: 1px solid #aaa;
+    border-top: 1px solid #ddd;
+    boxshadow: 0px 10px 14px -10px rgba(0,0,0,0.3);   
+}
+
+.navigation ul li:hover ul {
+    z-index: 100;
+    display: block;
+    padding: 0;
+    boxshadow: 0px 10px 14px -10px rgba(0,0,0,0.3);
+}
+
+
+/* ----------------------------------------- */
+/*             header-nav-mobile             */
+/* ----------------------------------------- */
+

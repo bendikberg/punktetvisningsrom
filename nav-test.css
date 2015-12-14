@@ -64,7 +64,7 @@ body {
     height: 100px;
     z-index: 2;
     bottom: 0;
-    box-shadow: inset 0px 10px 14px -10px rgba(256,256,256,0.9);
+    box-shadow: inset 0px -10px 20px -10px rgba(256,256,256,0.8);
     background-color: gray;
     transition: all 1s ease;
 }
@@ -90,7 +90,6 @@ body {
     left: -100%;
     right: -100%;
     display: none;
-    transition: all 1s ease;
 }
 
 #toggle:checked ~ .push {
@@ -111,11 +110,6 @@ body {
 }
 
 #toggle:checked + #header-toggle {
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    margin: 0 auto;
-    z-index: 15;
     background-color: blue;
     cursor: pointer;
     transition: all 1s ease;

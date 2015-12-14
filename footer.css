@@ -1,0 +1,105 @@
+
+/* social media buttons */
+
+
+.social-media-buttons {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.twitter {
+    width: 50px;
+    height: 50px;
+    margin-left: 60px;
+}
+
+.twitter2 {
+    transition: fill 0.3s;
+    fill: gray;
+}
+
+.twitter:hover .twitter2 {
+    transition: fill 0.5s;
+    fill: #2FA8DF;
+    
+}
+
+.facebook {
+    width: 50px;
+    height: 50px;
+}
+.facebook2 {
+    transition: fill 0.3s;
+    fill: gray;
+}
+
+.facebook:hover .facebook2 {
+    transition: fill 0.3s;
+    fill: #44629C;
+    
+}
+
+.instagram {
+    width: 50px;
+    height: 50px;
+    margin-right: 60px;
+}
+
+.instagram2 {
+    transition: fill 0.3s;
+    fill: gray;
+}
+
+.instagram:hover .instagram2 {
+    transition: fill 0.5s;
+    fill: #2B5C84;
+}
+
+
+
+
+/* ----------------------------------------- */
+/*             footer--wrapper               */
+/* ----------------------------------------- */
+
+
+
+.footer-wrapper p{
+    font-size: 0.8em;
+    margin-top: 50px;
+    letter-spacing: 1px;
+    
+}
+
+
+.footer-logo {
+    position: relative;
+    text-align: center;
+    margin-top: 60px;
+    height: 40px;
+    
+    
+}
+
+.footer-logo:hover  {
+    
+    
+    
+}
+
+#trondheim {
+    display: inline-block;
+    padding: 30px;
+    width: 60px;
+    transform: translateY(-50%);
+}
+
+#ntnu {
+    display: inline-block;
+    padding: 30px;
+    left: 30%;
+    width: 100px;
+    transform: translateY(-50%);
+    
+}
+

@@ -68,17 +68,18 @@ img {
     text-align: center;
     left: 0;
     right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 0;
     color: #fff;
     text-shadow: 0px 3px 8px black;
     font-family: Open Sans;
     letter-spacing: 7px;
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px 0px;
 }
 
 h1 {
     font-weight: 300;
-    font-size: 80px;
+    font-size: 70px;
     margin: -15px;
     text-transform: uppercase;
 }
@@ -92,8 +93,9 @@ h3 {
 
 h2 {
     font-weight: 700;
+    text-transform: capitalize;
     letter-spacing: 4px;
-    font-size: 30px;
+    font-size: 25px;
     margin: 0;
     font-family: Libre Baskerville;
 }
@@ -140,6 +142,7 @@ h3 {
 
 @media all and (max-width: 768px) and (min-width: 200px) and (min-width: 200px){
     .content {
+        background-color: white;
         position: relative;
         text-align: center;
         bottom: 0;
@@ -188,6 +191,31 @@ a {
     font-size: 60px;
 }
 
+.content1 {
+    display: none;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
+.previous-exhibit:hover .content1{
+    opacity: 1;
+    display: block;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    text-shadow: 0px 3px 8px black;
+    font-family: Open Sans;
+    letter-spacing: 7px;
+    background-color: rgba(0,0,0,0.7);
+    padding: 50px 0px;
+    transition: opacity 0.5s ease-in;
+}
+
+
 
 /* ----------------------------------------- */
 /*             content-wrapper               */
@@ -196,8 +224,8 @@ a {
 .main-content-wrapper {
     position: relative;
     z-index: 1;
+    margin-top: 50px;
     border: none;
-    margin-top:50px;
 }
 
 
@@ -241,6 +269,15 @@ a {
     margin-top: 60px;
     padding: 20px;
     border-top: 1px solid #ccc;
+}
+
+.picspacer {
+    margin-top:6px;
+    padding: 3px;
+    border-top: 1px solid #ff7303;
+    width: 75%;
+    margin-left: 12.5%;
+    
 }
 
 @media all and (min-width: 1149px) {
