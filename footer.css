@@ -90,17 +90,36 @@
 
 #trondheim {
     display: inline-block;
-    padding: 30px;
-    width: 60px;
+    padding: 10px;
+    width: 50px;
     transform: translateY(-50%);
 }
 
 #ntnu {
     display: inline-block;
-    padding: 30px;
-    left: 30%;
-    width: 100px;
+    padding: 30px 10px;
+    width: 120px;
     transform: translateY(-50%);
     
 }
 
+.top {
+    position: absolute;
+    top: 155px;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 40px;
+    border: 1px solid darkgray;
+    font-size: 43px;
+}
+
+#top-link {
+    color: darkgray;;
+}
+
+.topcontent {
+    margin: -5px 0px 0px 5px;
+}

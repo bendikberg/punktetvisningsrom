@@ -160,6 +160,18 @@ h3 {
     }
 }
 
+@media all and (max-width: 768px) and (min-width: 200px) and (min-width: 200px){
+    .content:hover {
+        text-decoration: underline;
+    }
+}
+
+@media all and (max-width: 768px) and (min-width: 200px){
+    .overlay {
+        display: none;
+        
+    }
+}
 
 .current-img:hover > .overlay {
     background-color: rgba(0,0,0,0.6);
@@ -200,7 +212,7 @@ a {
     letter-spacing: 7px;
     background-color: rgba(0,0,0,0.7);
     padding: 50px 0px;
-    transition: all 0.5s ease-in;
+    transition: opacity 0.5s ease-in;
 }
 
 
@@ -226,6 +238,30 @@ a {
     margin-top: 30px;
 }
 
+.employees {
+    margin-top: -30px;
+}
+
+.employee-box {
+    font-family: Libre Baskerville;
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 2em;
+    margin: 60px 20px;
+}
+
+.employee-box > .epost{
+    margin-top: -14px;
+}
+
+.employee-box a{
+    color: #cc5b00;
+}
+
+.employee-box a:hover{
+    color: #ff7303;
+}
+
 .secondary-content-wrapper {
     font-family: Open Sans;
     letter-spacing: 4px;
@@ -234,8 +270,8 @@ a {
     padding: 0;
     margin-top: 60px;
     z-index: 1;
-    
 }
+
 
 .footer-wrapper {
     font-family: Open Sans;
@@ -265,7 +301,13 @@ a {
     border-top: 1px solid #ff7303;
     width: 75%;
     margin-left: 12.5%;
-    
+}
+
+.textspacer {
+    margin:-18px 0px;
+    padding: 1px;
+    border-top: 1px solid #cc5b00;
+    width: 75%;
 }
 
 @media all and (min-width: 1149px) {
@@ -291,4 +333,79 @@ a {
         margin-right: auto;
         width: 90%;
     }
+}
+
+
+
+/* ----------------------------------------- */
+/*               press toggle                */
+/* ----------------------------------------- */
+
+.press-text {
+    display: none;
+    transition: all 0.3s ease;
+    padding-bottom: 15px;
+}
+
+.press {
+    margin-top: -15px;
+    margin-bottom: -35px;
+}
+
+#press-header {
+    margin-bottom: -25px;
+}
+
+label {
+    padding: 20px 20%;
+}
+
+label:hover {
+    color: #ff7303;
+    transition: all 0.3s ease;
+}
+
+.toggle {
+    position: absolute;
+    cursor: pointer;
+    appearance: none;
+    left: -100%;
+    right: -100%;
+    display: none;
+}
+
+.press-toggle {
+    font: Open Sans;
+    font-weight: 600;
+    font-size: 1.3em;
+    color: #cc5b00;
+    text-transform: uppercase;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 100;
+    cursor: pointer;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+}
+
+.toggle:checked + label {
+    color: #ff7303;
+}
+
+label:before {
+    content: "\25BC  ";
+}
+.toggle:checked + label:before {
+    content: "\25B2  ";
+}
+
+
+#toggle1:checked ~ #text-06-02-15 {
+    display: block;
+}
+
+
+#toggle2:checked ~ #text-bakkegard {
+    display: block;
 }

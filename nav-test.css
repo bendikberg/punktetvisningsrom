@@ -97,7 +97,6 @@ body {
     top: 200px;
     z-index: 1;
     transition: all 1s ease;
-    
 }
 
 #toggle:checked ~ .push > .content-box {
@@ -113,7 +112,6 @@ body {
     background-color: blue;
     cursor: pointer;
     transition: all 1s ease;
-    
 }
 
 #toggle:checked ~.header-box2 {
@@ -128,6 +126,5 @@ body {
     background-color:aqua;
     z-index: 10;
     transition: all 1s ease;
-    
 }
 
